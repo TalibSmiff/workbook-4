@@ -36,3 +36,25 @@ let courses = [
     Fee: "50.00",
   },
 ];
+
+for (const course of courses) {
+  if (course.CourseId == "PROG200") {
+    console.log(course.StartDate);
+  }
+}
+for (const course of courses) {
+  if (course.CourseId == "PROJ500") {
+    console.log(course.Title);
+  }
+}
+for (const course of courses) {
+  if (Number(course.Fee <= 50)) {
+    console.log(course.Title);
+  }
+}
+for (const course of courses) {
+  if (course.Location == "Classroom 1") {
+    console.log(course.Title);
+  }
+  
+}
